@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #container{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition:0.4s linear;
+            background:chartreuse;
+        }
+        #btn{
+            padding:5px 10px;
+            font-size: 25px;
+            border-radius: 2px 5px 2px 5px;
+            border:2px solid grey;
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+        #btn:hover{
+            cursor: pointer;
+        }
+        #colorCode{
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        h1{
+            position: absolute;
+            top:5%;
+            font-weight: bolder;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        h5{
+            position: absolute;
+            bottom:3%;
+            font-size: 17px;
+            z-index: 99;
+            background: chocolate;
+            padding: 5px;
+        }
+
+        h5 span{
+            color:greenyellow;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1>RGB COLOR CHOOSER</h1>
+
+        <button id="btn">Click Me</button>
+        <h3 id="colorCode"></h3>
+
+        <h5>Created By: <span>Smruti Sourav Nanda</span> </h5>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
